@@ -7,7 +7,7 @@
 ### 4 Shopping List
 ### 5 Basic App-Navigation
 ### 6 Expanding Number Guessing Game with highscore that is saved in AsyncStorage 
-####  Doesn't work properly
+#### - Doesn't work properly
 ### 7 Networking exercise with recipepuppy.com API
 ### 8 Euro Converter with fixer.io API
 ### 9 mapquest.com API exercise, Find Address 
