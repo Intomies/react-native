@@ -1,38 +1,17 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, FlatList, TextInput } from 'react-native';
+import { 
+        StyleSheet, 
+        View, 
+        Text, 
+      } from 'react-native';
 
 export default function App() {
 
-  const [listItem, setListItem] = useState('');
-  const [data, setData] = useState([]);
-
-  const addItem = () => {
-    setData([...data, {key: listItem}]);
-  }
-  const clearList = () => {
-    setData([]);
-  }
+  const foo  = 'Hello World!'
 
   return (
     <View style={styles.container}>
-        <View style={styles.text}>
-            <TextInput
-            style={styles.textIn}
-            onChangeText={(newListItem) => setListItem(newListItem)}
-            />
-        </View>    
-        <View style={styles.buttons}>
-            <Button onPress={addItem} title="Add" />
-            <Button onPress={clearList} title="Clear" />
-        </View>
-        <View style={styles.history}>
-            <Text>Shopping List:</Text>
-            <FlatList
-            data={data}
-            renderItem={({item}) =>
-            <Text>{item.key}</Text>
-            }/>
-        </View>
+        <Text style={styles.text}>{foo}</Text>
     </View>
   );
 }
@@ -47,19 +26,4 @@ const styles = StyleSheet.create({
   },
   text: {
     alignItems: 'center'
-  },
-  textIn: {
-    borderWidth: 1,
-    flexDirection: 'row',
-    width: 150,
-    alignItems: 'center',
-    justifyContent: 'space-around',
-  },
-  buttons: {
-    flexDirection: 'row',
-    justifyContent: 'center'
-  },
-  history: {
-      alignItems: 'center'
-  }
 });

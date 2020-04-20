@@ -1,5 +1,6 @@
 # React Native Excercises
 #### This is a repo for mobile developement-course in which we learned the basics of React Native
+#### Apps can be tested with BasicApp
 
 ### 1 Basic Calculator
 ### 2 Number Guessing Game

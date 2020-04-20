@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "BasicApp",
-    "slug": "thirdapp",
+    "slug": "BasicApp",
     "platforms": [
       "ios",
       "android",
