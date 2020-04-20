@@ -44,7 +44,7 @@ const fetchAddress = async () => {
 
 const fetchRestaurants = async () => {
   try {
-  const apiKey = 'AIzaSyBHYTa2DCp0XnblS1vPZSQ1Zzj88VQlT40';
+  const apiKey = ''; // Your API-key goes here
   const coordinates = lat + ',' + lon
   const apiUrl = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=' + coordinates + '&radius=1500&type=restaurant&keyword=cruise&key=' + apiKey
   const response = await fetch(apiUrl);
